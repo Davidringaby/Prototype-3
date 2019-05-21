@@ -1,0 +1,164 @@
+@import url("http://fonts.googleapis.com/css?family=Gafata");
+
+.usynlig{
+    display: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, serif;
+}
+div{
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+#opret{
+    text-align: right;
+    margin-right: 15%;
+}
+#opretKnap{
+    text-align:center;
+}
+#topBar{
+
+}
+.menu {
+    background-color: #A9B632;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: absolute;
+    width: 100%;
+}
+#klipBrugt {
+    background-color: #A9B632;
+}
+.botKnap {
+    display: inline-block;
+}
+.info {
+    margin-bottom: 0.15%;
+}
+#addClip{
+    padding-top: 34%;
+}
+.button {
+    background-color: #A9B632; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button:hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+/* The screen (or content) of the device */
+.smartphone .content {
+    width: 360px;
+    height: 640px;
+    background: white;
+}
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    padding-top: 10%;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: #A9B632;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #A9B632;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+

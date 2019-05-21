@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opret bruger</title>
+    <link href="generel.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="opretBruger" class="usynlig">
+<div class="smartphone">
+    <div class="content" style="width:100%;border:none;height:100%">
+        <div id="topBar">
+            <img src="pictures/topBarLogo.png" alt="Jesper's Torvekøkken logo" title="Jesper's Torvekøkken logo" />
+        </div>
+        <div>
+            <h1>
+                Opret dit kaffekort
+            </h1>
+        </div>
+        <div id="opret">
+            <form action="index0klip.html">
+                <p>Mobil nummer:
+                    <input type="text" name="mobilnummer" size="20"
+                           maxlength="30" />
+                </p>
+                <p>Kodeord:
+                    <input type="password" name="password" size="20"
+                           maxlength="30" />
+                </p>
+                <p>Genteg kodeord:
+                    <input type="password" name="password" size="20"
+                           maxlength="30" />
+                </p>
+            </form>
+        </div>
+        <div>
+            <form action="index0klip.html">
+                <button class="button" id="opretKnap">
+                    Opret kaffekort
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="brugPenge" class="usynlig">
+    <div class="smartphone">
+        <div class="content">
+            <div style="width:100%;border:none;height:100%">
+                <div id="topBar">
+                    <img src="pictures/topBarLogo.png" alt="Jesper's Torvekøkken logo" title="Jesper's Torvekøkken logo" />
+                </div>
+                <div id="overskriftBrugKlip">
+                    <h1>Er du sikker på at du vil bruge 80 kr?</h1>
+                </div>
+                <div>
+                    <form id="knappen">
+                        <button id="bekraeftKoeb" class="button" type="button">
+                            Bekræft
+                        </button>
+                    </form>
+                    <form>
+                        <button id="brugIkkePenge">
+                            Nej tak
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
